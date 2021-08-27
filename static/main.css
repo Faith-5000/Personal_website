@@ -1,25 +1,101 @@
-/* This css file is dedicated to stylings that wil be reused for ALL of the html pages */
-
-html, body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+/* whole page stylings */
+html,
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+body {
+  background: linear-gradient(108.96deg, #561aec 4.23%, #00fff9 90.72%);
 }
 
-/* makes the content section fill the entire page */
-.wholePage{
-    flex:1;
+.wholePage {
+  flex: 1;
 }
 
-#headerNav{
-  background: black;
+/* navbar styling */
+.navbar {
+  background-color: transparent;
 }
 
-/* Styling the Footer */
-#stickyFooter{
-    background: black;
-    opacity:0.5;
-    color: white;
-    padding-top:5px;
-    font-family: Palatino;
+#navHeader {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 255, 249, 0.47);
+}
+
+.collapse .nav-item {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+}
+
+.collapse .nav-item .nav-link {
+  color: #000000;
+}
+
+.collapse .nav-item:hover {
+  font-size: 20px;
+  color: black;
+  border-bottom: 2px solid #00fff9;
+  width: fit-content;
+}
+
+/* styling for the home page */
+#mainCircle img {
+  border: 6px solid #ff00c1;
+  background: #ff00c1;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#secCircle {
+  border: 6px solid #ff00c1;
+  background: #ff00c1;
+
+  width: 270px;
+  height: fit-content;
+  left: 281px;
+  top: 387px;
+
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#secCircle p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#secCircle div {
+  font-family: Courier Prime;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 184px;
 }

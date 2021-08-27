@@ -9,3 +9,7 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 @app.route("/")
 def layout():
     return render_template("index.html")
+
+@app.route("/about")
+def about():
+    render_template("about.html")
