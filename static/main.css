@@ -1,0 +1,25 @@
+/* This css file is dedicated to stylings that wil be reused for ALL of the html pages */
+
+html, body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* makes the content section fill the entire page */
+.wholePage{
+    flex:1;
+}
+
+#headerNav{
+  background: black;
+}
+
+/* Styling the Footer */
+#stickyFooter{
+    background: black;
+    opacity:0.5;
+    color: white;
+    padding-top:5px;
+    font-family: Palatino;
+}
