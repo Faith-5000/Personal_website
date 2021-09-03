@@ -15,11 +15,27 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="../static/main.css" rel="stylesheet">
 
+    <script>
+        // adds a background to the navbar when the page is being scrolled
+        // code based from https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp
+
+        window.onscroll = function () { scrollingNav() };
+
+        function scrollingNav() {
+            var navbar = document.getElementById('navBar');
+            if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+                navbar.style.backgroundColor = "rgb(244, 230, 255,0.7)";
+            } else {
+                navbar.style.backgroundColor = "transparent";
+            }
+        }
+    </script>
+
 </head>
 
-<body class="wholeBody">
+<body class="wholeBody mb-5">
 
-    <nav class="navbar navbar-expand-md navbar-light mb-5">
+    <nav class="navbar navbar-expand-md navbar-light mb-5" id="navBar">
         <div class="container-fluid">
             <a class="navbar-brand" id="navHeader" ref="#">Faith Rounds</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -45,7 +61,7 @@
         </div>
     </nav>
 
-    <main class="container-fluid mb-5">
+    <main class="container-fluid mt-5">
         {% block main %}{% endblock %}
     </main>
 

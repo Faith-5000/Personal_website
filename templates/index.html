@@ -6,19 +6,50 @@ Index
 
 {% block main%}
 <div class="row">
-    <div class="col" id="circles">
+    <div class="col-md mb-5" id="circles">
         <div id="mainCircle">
             <img src="../static/headshot1.png" alt="Faith in the sun" class="img-fluid">
         </div>
-        <div id="secCircle">
-            <p>
-                I am a project-oriented collaborator focused on creating products to improve everyday life.
-            </p>
-            <button href="#">View Profile</button>
-        </div>
+        <!-- Use to overlap the circles later-->
+        <!-- <div id="secCircle">
+            <div id="sec-circle-cont">
+                <p>
+                    I am a project-oriented collaborator focused on creating products to improve everyday life.
+                </p>
+                <button href="#">View Profile</button>
+            
+            </div> -->
     </div>
-    <div class="col" id="intro">
+    <div class="col-md" id="intro">
+        <section id="sect1">
+            <h1>Hello, I am</h1>
+            <h2> Faith Rounds</h2>
 
+            <h5>
+                <hr>
+            </h5>
+
+            <p> Innovator, App Developer, Web Developer</p>
+        </section>
+
+        <section class="container-fluid" id="sect2">
+            <section class="row">
+
+                <div class="col">
+                    <a class="introButton" href="https://www.facebook.com/faith.rounds.96" target="_blank"> <img
+                            src="../static/facebook.png" class="img-fluid" alt="facebook button"> </a>
+                    <a class="introButton" href="mailto:cyber.faith@yahoo.com" target="_blank"> <img
+                            src="../static/mail.png" class="img-fluid" alt="mail button"> </a>
+                    <a class="introButton" href="https://www.linkedin.com/in/faith-r-8a1235191" target="_blank"> <img
+                            src="../static/linkin.png" class="img-fluid" alt="LinkedIn button"> </a>
+                    <a class="introButton" href="https://www.instagram.com/faith_pzr/" target="_blank"> <img
+                            src="../static/insta.png" class="img-fluid" alt="instagram button"> </a>
+
+                </div>
+
+            </section>
+
+        </section>
     </div>
 </div>
 {% endblock %}
